@@ -1,0 +1,17 @@
+<div id="container">
+	<div id="pie"></div>
+	<div id="circle-guide"  [ngStyle]="{'transform': 'rotate('+deg+'deg)' }">
+		<div id="small-circle"></div>
+	</div>
+	<div id="circle">
+		<div id="inner-circle">
+			<h1>{{currentTimer}}</h1>
+		</div>
+	</div>
+	<div id="button-container">
+
+		<button type="button" (click)="action(!state)">{{state?'Start/Resume':'Pause'}}</button>
+		<button type="button" (click)="reset()">Reset</button>
+	</div>
+
+</div>
